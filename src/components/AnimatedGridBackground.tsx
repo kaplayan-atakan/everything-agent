@@ -224,7 +224,6 @@ function AnimatedGridBackground({
       }
     };
   }, []);
-
   useEffect(() => {
     if (dimensions.width > 0 && dimensions.height > 0) {
       startAnimation();
@@ -235,7 +234,7 @@ function AnimatedGridBackground({
         cancelAnimationFrame(animationRef.current);
       }
     };
-  }, [dimensions]);
+  }, [dimensions, startAnimation]);
 
   return (
     <div className={`animated-grid-background ${className}`}>

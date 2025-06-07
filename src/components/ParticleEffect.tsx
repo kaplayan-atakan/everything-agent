@@ -295,7 +295,6 @@ function ParticleEffect({
       }
     };
   }, []);
-
   useEffect(() => {
     if (dimensions.width > 0 && dimensions.height > 0) {
       particlesRef.current = initializeParticles(dimensions.width, dimensions.height);
@@ -307,7 +306,7 @@ function ParticleEffect({
         cancelAnimationFrame(animationRef.current);
       }
     };
-  }, [dimensions]);
+  }, [dimensions, initializeParticles, animate]);
 
   return (
     <div className={`particle-effect ${className}`}>
