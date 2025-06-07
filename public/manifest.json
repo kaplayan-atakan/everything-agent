@@ -1,0 +1,39 @@
+{
+  "short_name": "Everything Agent",
+  "name": "Everything Agent - AI Ajanları ve İş Süreçleri Otomasyonu",
+  "description": "Yapay zeka ile iş süreçlerinizi otomatikleştirin. AI ajanları, chatbot çözümleri ve akıllı otomasyon.",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "favicon.ico",
+      "sizes": "16x16 32x32",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#001122",
+  "background_color": "#0a0a0f",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "tr",
+  "categories": [
+    "business",
+    "productivity",
+    "utilities"
+  ],
+  "screenshots": [
+    {
+      "src": "og-image.svg",
+      "sizes": "1200x630",
+      "type": "image/svg+xml",
+      "platform": "wide",
+      "label": "Everything Agent Ana Sayfa"
+    }
+  ]
+}

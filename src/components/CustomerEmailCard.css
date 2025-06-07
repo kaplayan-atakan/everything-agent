@@ -1,0 +1,229 @@
+.email-card {
+  max-width: 800px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, var(--electric-blue) 0%, var(--hot-pink) 100%);
+  border-radius: 0;
+  padding: 2px;
+  box-shadow: 
+    0 0 20px rgba(0, 255, 255, 0.3),
+    0 0 40px rgba(255, 0, 255, 0.2),
+    inset 0 0 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 2rem;
+  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px));
+  position: relative;
+  overflow: hidden;
+}
+
+.email-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(45deg, 
+    transparent 30%, 
+    rgba(0, 255, 255, 0.1) 50%, 
+    transparent 70%);
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.email-header {
+  background: linear-gradient(135deg, var(--dark-bg) 0%, rgba(20, 20, 30, 0.95) 100%);
+  padding: 1.5rem 2rem 1rem;
+  border-bottom: 2px solid var(--electric-blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.email-header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--electric-blue), var(--hot-pink), var(--neon-green));
+  animation: glow-pulse 2s ease-in-out infinite alternate;
+}
+
+.company-name {
+  color: var(--text-bright);
+  font-family: 'Orbitron', monospace;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 
+    0 0 10px var(--electric-blue),
+    0 0 20px var(--electric-blue),
+    0 0 30px var(--electric-blue);
+  letter-spacing: 2px;
+}
+
+.email-date {
+  color: var(--text-secondary);
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.email-content {
+  background: linear-gradient(135deg, var(--dark-secondary) 0%, rgba(25, 25, 40, 0.95) 100%);
+  padding: 2rem;  color: var(--text-primary);
+  border-top: 1px solid var(--electric-blue);
+}
+
+.greeting h3 {
+  color: var(--text-bright);
+  font-family: 'Exo 2', sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-shadow: 0 0 10px var(--neon-green);
+}
+
+.email-body p {
+  color: var(--text-primary);
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.highlight-box {
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.1), rgba(255, 0, 255, 0.05));
+  border: 1px solid var(--electric-blue);
+  border-radius: 0;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  position: relative;
+  clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 15px 100%, 0 calc(100% - 15px));
+  box-shadow: 
+    0 0 15px rgba(0, 255, 255, 0.2),
+    inset 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.highlight-box::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, var(--electric-blue), var(--hot-pink), var(--neon-green));
+  animation: glow-pulse 2s ease-in-out infinite alternate;
+}
+
+.highlight-box h4 {
+  color: var(--text-bright);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: 'Exo 2', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.highlight-box ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.highlight-box li {
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-family: 'Rajdhani', sans-serif;
+  position: relative;
+}
+
+.highlight-box li::marker {
+  color: var(--neon-green);
+}
+
+.email-signature {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--electric-blue);
+  position: relative;
+}
+
+.email-signature::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--electric-blue), transparent);
+}
+
+.signature-line p {
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.contact-info {
+  color: var(--text-secondary) !important;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  font-family: 'Rajdhani', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .email-card {
+    margin: 1rem;
+    padding: 1px;
+    clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 15px 100%, 0 calc(100% - 15px));
+  }
+  
+  .email-header {
+    padding: 1rem 1.5rem 0.8rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  
+  .company-name {
+    font-size: 1.5rem;
+  }
+  
+  .email-content {
+    padding: 1.5rem;
+  }
+  
+  .greeting h3 {
+    font-size: 1.2rem;
+  }
+  
+  .highlight-box {
+    padding: 1rem;
+    clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+  }
+}
+
+@keyframes glow-pulse {
+  0% {
+    box-shadow: 
+      0 0 5px var(--electric-blue),
+      0 0 10px var(--electric-blue),
+      0 0 15px var(--electric-blue);
+  }
+  100% {
+    box-shadow: 
+      0 0 10px var(--electric-blue),
+      0 0 20px var(--electric-blue),
+      0 0 30px var(--electric-blue);
+  }
+}
