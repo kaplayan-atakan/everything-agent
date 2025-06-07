@@ -1,0 +1,47 @@
+<!-- Placeholder OG Image for Social Media -->
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#001122;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#003366;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#001122;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00FFFF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FF00FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#39FF14;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="100%" height="100%" fill="url(#bgGradient)"/>
+  
+  <!-- Grid pattern -->
+  <defs>
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#00FFFF" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grid)" />
+  
+  <!-- Main content -->
+  <text x="600" y="200" font-family="Arial, sans-serif" font-size="64" font-weight="bold" text-anchor="middle" fill="url(#textGradient)">
+    Everything Agent
+  </text>
+  
+  <text x="600" y="280" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#FFFFFF">
+    Yapay Zeka ile İş Süreçlerinizi Otomatikleştirin
+  </text>
+  
+  <text x="600" y="380" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#CCCCCC">
+    ✓ AI Ajanları  ✓ Müşteri Hizmetleri  ✓ Süreç Otomasyonu
+  </text>
+  
+  <text x="600" y="450" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#39FF14">
+    info@everythingagent.com | +90 (212) 123 45 67
+  </text>
+  
+  <!-- Decorative elements -->
+  <circle cx="150" cy="150" r="30" fill="none" stroke="#00FFFF" stroke-width="2" opacity="0.6"/>
+  <rect x="1000" y="450" width="40" height="40" fill="none" stroke="#FF00FF" stroke-width="2" opacity="0.6" transform="rotate(45 1020 470)"/>
+  <polygon points="100,500 130,450 160,500" fill="none" stroke="#39FF14" stroke-width="2" opacity="0.6"/>
+</svg>

@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://everythingagent.com/sitemap.xml
+
+# Crawl-delay for courtesy
+Crawl-delay: 1
+
+# Disallow admin areas if any
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+
+# Allow specific files
+Allow: /static/
+Allow: /images/
+Allow: /css/
+Allow: /js/
